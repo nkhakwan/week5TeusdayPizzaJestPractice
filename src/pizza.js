@@ -44,6 +44,7 @@ var calculateOrder = function(size,toppingOne,toppingTwo){
   return size + toppingOne + toppingTwo;
 }
 
+var pizzaOrder = new PizzaOrders();
 
 /*function displayOrderDetails(pizzaOrder) {
   var ordersListt = $("ul#delivered");
@@ -53,7 +54,7 @@ var calculateOrder = function(size,toppingOne,toppingTwo){
   ordersListt.html(htmlForOrderInfo);
 });
 ordersListt.html(htmlForOrderInfo);
-};*/
+};
 
 
 
@@ -80,4 +81,4 @@ $(document).ready(function() {
    $("#cost").html(pizzaOrder.orderPrice[pizzaOrder.id]);
    
   });
-});
+});*/
