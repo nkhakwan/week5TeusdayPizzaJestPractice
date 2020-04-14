@@ -5,7 +5,9 @@ describe('PizzaOrders', () => {
   test('should be forgotten and lets see what my first test is', () => {
     var pizzaOrder = new PizzaOrders();
     pizzaOrder.addOrder(3,4,4);
+    expect(pizzaOrder.orderPrice[1]).toEqual(11);
     expect(pizzaOrder.toppingOne[1]).toEqual(10);
+
   });
 });
 
