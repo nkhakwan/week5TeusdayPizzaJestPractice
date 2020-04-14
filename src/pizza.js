@@ -1,5 +1,5 @@
 // Business Logic -----------------------
-function PizzaOrders() {
+export function PizzaOrders() {
   this.toppingOnePrice = [],
   this.toppingTwoPrice = [],
   this.sizePrice =[],

@@ -5,6 +5,10 @@
 //import '../css/styles.css'
 import './styles.css';
 import { PizzaOrders } from './pizza';
+import $ from 'jquery';
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './styles.css';
 
 
 var pizzaOrder = new PizzaOrders();
