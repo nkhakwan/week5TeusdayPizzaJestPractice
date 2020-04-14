@@ -8,6 +8,7 @@ export function PizzaOrders() {
   this.toppingTwo = [],
   this.size = [],
   this.id = 0
+  debugger;
 }
 
 

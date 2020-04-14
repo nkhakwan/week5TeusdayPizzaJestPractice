@@ -30,7 +30,7 @@ describe('PizzaOrders', () => {
   test('should be forgotten and lets see what my first test is', () => {
     //var pizzaOrder = new PizzaOrders();
     //pizzaOrder.addOrder(3,4,4);
-    expect(pizzaOrder.toppingOne[1].toLowerCase()).toEqual("chicken");
+    expect(pizzaOrder.toppingOne[1].toLowerCase()).toEqual("Chicken");
   });
   test('should test orderPrice', () => {
     //var pizzaOrder = new PizzaOrders();
