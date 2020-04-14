@@ -1,6 +1,6 @@
 import { PizzaOrders } from './../src/pizza.js';
 
-describe('PizzaOrders', () => {
+/*describe('PizzaOrders', () => {
 
   test('should test orderPrice', () => {
     var pizzaOrder = new PizzaOrders();
@@ -17,26 +17,25 @@ describe('PizzaOrders', () => {
     expect(pizzaOrder.toppingOne[1].toLowerCase()).toEqual("chicken");
 
   });
-});
+});*/
 
-describe('Triangle', () => {
-  var reusableTriangle;
+describe('PizzaOrders', () => {
+  var pizzaOrder;
 
   beforeEach(() => {
-    reusableTriangle = new Triangle(5, 5, 5);
+    pizzaOrder = new PizzaOrders();
+    pizzaOrder.addOrder(3,4,4);
   });
 
-  test('should show how beforeEach() works', () => {
-    console.log(reusableTriangle);
+  test('should be forgotten and lets see what my first test is', () => {
+    //var pizzaOrder = new PizzaOrders();
+    //pizzaOrder.addOrder(3,4,4);
+    expect(pizzaOrder.toppingOne[1].toLowerCase()).toEqual("chicken");
+  });
+  test('should test orderPrice', () => {
+    //var pizzaOrder = new PizzaOrders();
+    //pizzaOrder.addOrder(3,4,4);
+    expect(pizzaOrder.orderPrice[1]).toEqual(11);
   });
 });
 
-/*describe('Triangle', () => {
-
-  test('should correctly create a triangle object with three lengths', () => {
-    var triangle = new Triangle(2,4,5);
-    expect(triangle.side1).toEqual(2);
-    expect(triangle.side2).toEqual(4);
-    expect(triangle.side3).toEqual(5);
-  });
-});*/
