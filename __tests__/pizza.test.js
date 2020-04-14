@@ -2,12 +2,32 @@ import { PizzaOrders } from './../src/pizza.js';
 
 describe('PizzaOrders', () => {
 
-  test('should be forgotten and lets see what my first test is', () => {
+  test('should test orderPrice', () => {
     var pizzaOrder = new PizzaOrders();
     pizzaOrder.addOrder(3,4,4);
     expect(pizzaOrder.orderPrice[1]).toEqual(11);
-    expect(pizzaOrder.toppingOne[1]).toEqual(10);
+  });
+});
 
+describe('PizzaOrders', () => {
+
+  test('should be forgotten and lets see what my first test is', () => {
+    var pizzaOrder = new PizzaOrders();
+    pizzaOrder.addOrder(3,4,4);
+    expect(pizzaOrder.toppingOne[1].toLowerCase()).toEqual("chicken");
+
+  });
+});
+
+describe('Triangle', () => {
+  var reusableTriangle;
+
+  beforeEach(() => {
+    reusableTriangle = new Triangle(5, 5, 5);
+  });
+
+  test('should show how beforeEach() works', () => {
+    console.log(reusableTriangle);
   });
 });
 
